@@ -1,2 +1,0 @@
-# Salleh
-Salleh App
