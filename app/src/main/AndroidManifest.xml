@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.seniorproject.sallemapp">
+    package="com.seniorproject.salleh">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -12,33 +12,33 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <permission
-        android:name="com.seniorproject.sallemapp.permission.C2D_MESSAGE"
+        android:name="com.seniorproject.salleh.permission.C2D_MESSAGE"
         android:protectionLevel="signature" />
 
     <application
-        android:name=".helpers.MyApplication"
+        android:name="com.seniorproject.salleh.helpers.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.SplashActivity">
+        <activity android:name="com.seniorproject.salleh.Activities.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activities.WelcomeActivity" />
-        <activity android:name=".Activities.SignInActivity" />
+        <activity android:name="com.seniorproject.salleh.Activities.WelcomeActivity" />
+        <activity android:name="com.seniorproject.salleh.Activities.SignInActivity" />
         <activity
-            android:name=".Activities.HomeActivity"
+            android:name="com.seniorproject.salleh.Activities.HomeActivity"
             android:exported="true"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme" />
-        <activity android:name=".Activities.ResetPasswordActivity" />
-        <activity android:name=".Activities.RegistrationActivity" />
-        <activity android:name=".Activities.AddEventActivity" />
+        <activity android:name="com.seniorproject.salleh.Activities.ResetPasswordActivity" />
+        <activity android:name="com.seniorproject.salleh.Activities.RegistrationActivity" />
+        <activity android:name="com.seniorproject.salleh.Activities.AddEventActivity" />
         <!--
             The API key for Google Maps-based APIs is defined as a string resource.
             (See the file "res/values/google_maps_api.xml").
@@ -52,7 +52,7 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".Activities.MapsActivity"
+            android:name="com.seniorproject.salleh.Activities.MapsActivity"
             android:label="@string/title_activity_maps" />
 
         <receiver
@@ -65,12 +65,12 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".Activities.AddPostActivity" />
-        <activity android:name=".Activities.ShowPostActivity" />
+        <activity android:name="com.seniorproject.salleh.Activities.AddPostActivity" />
+        <activity android:name="com.seniorproject.salleh.Activities.ShowPostActivity" />
 
         <service
             android:enabled="true"
-            android:name=".SallemService"
+            android:name="com.seniorproject.salleh.SallehService"
             >
             <intent-filter>
                 <action android:name=
@@ -79,7 +79,7 @@
         </service>
 
         <activity
-            android:name=".Activities.SelectParticipantsActivity"
+            android:name="com.seniorproject.salleh.Activities.SelectParticipantsActivity"
             android:label="@string/title_activity_select_participants"
             android:theme="@style/AppTheme"></activity>
     </application>
